@@ -35,7 +35,7 @@ export default function OnboardingScreen({ navigation }) {
           </Animated.Text>
           {/* App Button */}
           <View className="w-full">
-          <TouchableOpacity className="w-full bg-sky-400 p-3 rounded-2xl my-3" onPress={()=> navigation.navigate("Welcome")}>
+          <TouchableOpacity className="w-full bg-sky-500 p-3 rounded-2xl my-3" onPress={()=> navigation.navigate("Welcome")}>
             <Text className="text-xl font-bold text-white text-center">
               Create Account
             </Text>
@@ -48,7 +48,7 @@ export default function OnboardingScreen({ navigation }) {
             onPress={()=>navigation.navigate('Login')}
             className="flex justify-center align-center"
           >
-            <Text className="text-xl font-bold text-sky-400 text-center">
+            <Text className="text-xl font-bold text-sky-500 text-center">
               Login
             </Text>
           </TouchableOpacity>

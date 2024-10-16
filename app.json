@@ -1,11 +1,14 @@
 {
   "expo": {
-    "name": "doctor-app",
+    "name": "QuickHealth",
     "slug": "doctor-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/ios.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      ["expo-updates", {"username":"aimes"}]
+    ],
     "splash": {
       "image": "./assets/android.png",
       "resizeMode": "contain",
@@ -15,16 +18,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aimes.doctorapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/android.png",
         "backgroundColor": "#38bdf8"
-      }
+      },
+      "package": "com.aimes.doctorapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "08c56a18-9e2b-44a4-b296-ddda10880796"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/08c56a18-9e2b-44a4-b296-ddda10880796"
     }
   }
 }
